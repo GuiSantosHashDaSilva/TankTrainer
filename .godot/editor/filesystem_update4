@@ -1,12 +1,6 @@
-res://Scripts/bossselect.gd
-res://Cenas/mainmenu.tscn
-res://Scripts/mainmenu.gd
-res://Cenas/bossselect.tscn
-res://Scripts/menubosses.gd
-res://Cenas/menubosses.tscn
-res://Scripts/menucredito.gd
-res://Cenas/menucredito.tscn
-res://Cenas/arena.tscn
 res://Cenas/personagem.tscn
 res://Scripts/smoker.gd
+res://Cenas/arena.tscn
+res://Cenas/deathstalker.tscn
 res://Scripts/arena.gd
+res://Scripts/deathstalker.gd

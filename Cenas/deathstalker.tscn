@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://1gey5ofi5ls4"]
+
+[ext_resource type="Texture2D" uid="uid://cvuy6ywfmbsjq" path="res://Assets/Reiju-Witch-sprite.png" id="1_b0mhb"]
+[ext_resource type="Script" uid="uid://4sdijr8qk177" path="res://Scripts/deathstalker.gd" id="1_wuox4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wuox4"]
+size = Vector2(97, 97)
+
+[node name="deathstalker" type="CharacterBody2D" unique_id=1768108959]
+script = ExtResource("1_wuox4")
+
+[node name="collisiondeathstalker" type="CollisionShape2D" parent="." unique_id=1169931896]
+position = Vector2(49.5, 49.5)
+shape = SubResource("RectangleShape2D_wuox4")
+
+[node name="spritedeathstalker" type="Sprite2D" parent="." unique_id=1912352351]
+texture_filter = 1
+position = Vector2(29, 28.000004)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_b0mhb")
