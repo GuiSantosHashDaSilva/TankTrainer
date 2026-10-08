@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Char_data" format=3 uid="uid://cxk7mrqyi1ga4"]
+
+[ext_resource type="Texture2D" uid="uid://cscc03n7gv6fs" path="res://Assets/Rayleigh-sprite.png" id="1_6jy1y"]
+[ext_resource type="Script" uid="uid://c4dpg7jxxkxjh" path="res://Resources/personagem.gd" id="1_va5p8"]
+
+[resource]
+script = ExtResource("1_va5p8")
+char_speed = 0.28
+char_sprite = ExtResource("1_6jy1y")
+metadata/_custom_type_script = "uid://c4dpg7jxxkxjh"

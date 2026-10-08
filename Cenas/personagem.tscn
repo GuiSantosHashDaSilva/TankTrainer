@@ -1,20 +1,21 @@
 [gd_scene format=3 uid="uid://bb5lr7je7is85"]
 
 [ext_resource type="Script" uid="uid://d3ookpxukqgyh" path="res://Scripts/smoker.gd" id="1_ns5cc"]
-[ext_resource type="Texture2D" uid="uid://bbgqlbjswos6b" path="res://Assets/Bastille-sprite.png" id="2_ns5cc"]
+[ext_resource type="Texture2D" uid="uid://bmo1lcdyntjrg" path="res://Assets/Luffy-PirateKing_sprite.png" id="2_ns5cc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_00eoc"]
 size = Vector2(98, 98)
 
-[node name="smoker" type="CharacterBody2D" unique_id=2017056439]
+[node name="smoker" type="CharacterBody2D" unique_id=2017056439 node_paths=PackedStringArray("sprite")]
 script = ExtResource("1_ns5cc")
+sprite = NodePath("sprite")
 
-[node name="collisionsmoker" type="CollisionShape2D" parent="." unique_id=2053888884]
-position = Vector2(49, 49)
+[node name="charcollision" type="CollisionShape2D" parent="." unique_id=2053888884]
+position = Vector2(49, -49)
 shape = SubResource("RectangleShape2D_00eoc")
 
-[node name="spritesmoker" type="Sprite2D" parent="." unique_id=250601481]
+[node name="sprite" type="Sprite2D" parent="." unique_id=250601481]
 texture_filter = 1
-position = Vector2(-34, -22)
+position = Vector2(-33, -121.00001)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_ns5cc")

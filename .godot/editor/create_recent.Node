@@ -1,9 +1,13 @@
+Control
+MarginContainer
+HBoxContainer
+VBoxContainer
+Label
+HSlider
+Button
 Sprite2D
 CollisionShape2D
 CharacterBody2D
 TileMapLayer
 TileMap
-Button
 Panel
-Label
-VBoxContainer

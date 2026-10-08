@@ -1,55 +1,27 @@
 [gd_scene format=3 uid="uid://b5lcexqgfehp2"]
 
 [ext_resource type="Script" uid="uid://kg3pdls7l7x8" path="res://Scripts/menubosses.gd" id="1_0faue"]
+[ext_resource type="Script" uid="uid://c4dpg7jxxkxjh" path="res://Resources/personagem.gd" id="2_aygxc"]
+[ext_resource type="Resource" uid="uid://dp05tp3dmhbus" path="res://Resources/preset260.tres" id="3_tfov2"]
+[ext_resource type="Resource" uid="uid://d1lschmyxsgk7" path="res://Resources/preset280.tres" id="4_bijmf"]
+[ext_resource type="Resource" uid="uid://qsblspya4iai" path="res://Resources/preset300.tres" id="5_t3cj6"]
+[ext_resource type="Resource" uid="uid://cxk7mrqyi1ga4" path="res://Resources/preset320.tres" id="6_05c3n"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_346fi"]
 font_size = 78
 
 [node name="menubosses" type="Node2D" unique_id=421923819]
 script = ExtResource("1_0faue")
+presetlist = Dictionary[int, ExtResource("2_aygxc")]({
+0: ExtResource("3_tfov2"),
+1: ExtResource("4_bijmf"),
+2: ExtResource("5_t3cj6"),
+3: ExtResource("6_05c3n")
+})
 
 [node name="background" type="Panel" parent="." unique_id=135623526]
 offset_right = 1920.0
 offset_bottom = 1080.0
-
-[node name="vboxbuttonbosses" type="VBoxContainer" parent="background" unique_id=249479405]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -113.0
-offset_top = -141.0
-offset_right = 113.0
-offset_bottom = 141.0
-grow_horizontal = 2
-grow_vertical = 2
-alignment = 1
-
-[node name="deathstalkerbutton" type="Button" parent="background/vboxbuttonbosses" unique_id=1678736455]
-layout_mode = 2
-text = "Deathstalker"
-
-[node name="barbarossabutton" type="Button" parent="background/vboxbuttonbosses" unique_id=418188876]
-layout_mode = 2
-text = "Barbarossa"
-
-[node name="maderabutton" type="Button" parent="background/vboxbuttonbosses" unique_id=172773237]
-layout_mode = 2
-text = "Madera"
-
-[node name="sanshoobutton" type="Button" parent="background/vboxbuttonbosses" unique_id=2081111839]
-layout_mode = 2
-text = "Sanshoo"
-
-[node name="hassanbutton" type="Button" parent="background/vboxbuttonbosses" unique_id=234009046]
-layout_mode = 2
-text = "Hassan"
-
-[node name="voltarbutton" type="Button" parent="background/vboxbuttonbosses" unique_id=1457905750]
-layout_mode = 2
-text = "Voltar"
 
 [node name="bosseslabel" type="Label" parent="background" unique_id=1206512802]
 layout_mode = 0
@@ -63,5 +35,72 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[connection signal="pressed" from="background/vboxbuttonbosses/deathstalkerbutton" to="." method="_on_deathstalkerbutton_pressed"]
-[connection signal="pressed" from="background/vboxbuttonbosses/voltarbutton" to="." method="_on_voltarbutton_pressed"]
+[node name="MarginContainer" type="MarginContainer" parent="background" unique_id=1439264035]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 200
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 200
+
+[node name="HBoxContainer" type="HBoxContainer" parent="background/MarginContainer" unique_id=923747902]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="vboxbuttonbosses" type="VBoxContainer" parent="background/MarginContainer/HBoxContainer" unique_id=249479405]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="deathstalkerbutton" type="Button" parent="background/MarginContainer/HBoxContainer/vboxbuttonbosses" unique_id=1678736455]
+layout_mode = 2
+text = "Deathstalker"
+
+[node name="barbarossabutton" type="Button" parent="background/MarginContainer/HBoxContainer/vboxbuttonbosses" unique_id=418188876]
+layout_mode = 2
+text = "Barbarossa"
+
+[node name="maderabutton" type="Button" parent="background/MarginContainer/HBoxContainer/vboxbuttonbosses" unique_id=172773237]
+layout_mode = 2
+text = "Madera"
+
+[node name="sanshoobutton" type="Button" parent="background/MarginContainer/HBoxContainer/vboxbuttonbosses" unique_id=2081111839]
+layout_mode = 2
+text = "Sanshoo"
+
+[node name="hassanbutton" type="Button" parent="background/MarginContainer/HBoxContainer/vboxbuttonbosses" unique_id=234009046]
+layout_mode = 2
+text = "Hassan"
+
+[node name="voltarbutton" type="Button" parent="background/MarginContainer/HBoxContainer/vboxbuttonbosses" unique_id=1457905750]
+layout_mode = 2
+text = "Voltar"
+
+[node name="Control" type="Control" parent="background/MarginContainer/HBoxContainer" unique_id=512111195]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="background/MarginContainer/HBoxContainer" unique_id=1257184328]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="background/MarginContainer/HBoxContainer/VBoxContainer" unique_id=1139719477]
+layout_mode = 2
+text = "Velocidade do personagem"
+
+[node name="slidercharspeed" type="HSlider" parent="background/MarginContainer/HBoxContainer/VBoxContainer" unique_id=2063132548]
+layout_mode = 2
+max_value = 3.0
+rounded = true
+tick_count = 4
+
+[connection signal="pressed" from="background/MarginContainer/HBoxContainer/vboxbuttonbosses/deathstalkerbutton" to="." method="_on_deathstalkerbutton_pressed"]
+[connection signal="pressed" from="background/MarginContainer/HBoxContainer/vboxbuttonbosses/voltarbutton" to="." method="_on_voltarbutton_pressed"]
+[connection signal="value_changed" from="background/MarginContainer/HBoxContainer/VBoxContainer/slidercharspeed" to="." method="_on_slidercharspeed_value_changed"]

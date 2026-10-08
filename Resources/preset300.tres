@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Char_data" format=3 uid="uid://qsblspya4iai"]
+
+[ext_resource type="Texture2D" uid="uid://bmo1lcdyntjrg" path="res://Assets/Luffy-PirateKing_sprite.png" id="1_bni6h"]
+[ext_resource type="Script" uid="uid://c4dpg7jxxkxjh" path="res://Resources/personagem.gd" id="1_vg4s5"]
+
+[resource]
+script = ExtResource("1_vg4s5")
+char_speed = 0.3
+char_sprite = ExtResource("1_bni6h")
+metadata/_custom_type_script = "uid://c4dpg7jxxkxjh"

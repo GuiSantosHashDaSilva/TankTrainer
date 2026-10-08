@@ -10,11 +10,11 @@ size = Vector2(97, 97)
 script = ExtResource("1_wuox4")
 
 [node name="collisiondeathstalker" type="CollisionShape2D" parent="." unique_id=1169931896]
-position = Vector2(49.5, 49.5)
+position = Vector2(49.5, -48)
 shape = SubResource("RectangleShape2D_wuox4")
 
 [node name="spritedeathstalker" type="Sprite2D" parent="." unique_id=1912352351]
 texture_filter = 1
-position = Vector2(29, 28.000004)
+position = Vector2(28, -68)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("1_b0mhb")

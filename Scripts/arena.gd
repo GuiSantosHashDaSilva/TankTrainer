@@ -1,8 +1,14 @@
 extends Node2D
 
+class_name Arena
+
 const CENA_CHAR = preload("res://Cenas/personagem.tscn")
 const CENA_BOSS = preload("res://Cenas/deathstalker.tscn")
 const TILE_SIZE = 96
+
+static var presetselecionado: Char_data
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	spawn_player(Vector2(9*TILE_SIZE,6*TILE_SIZE))
@@ -10,6 +16,7 @@ func _ready() -> void:
 
 func spawn_player(spawn_position: Vector2): # Use Vector3 for 3D
 	var player_instance = CENA_CHAR.instantiate()
+	player_instance.setup(presetselecionado)
 	add_child(player_instance)
 	player_instance.global_position = spawn_position
 	

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Char_data" format=3 uid="uid://dp05tp3dmhbus"]
+
+[ext_resource type="Texture2D" uid="uid://bbgqlbjswos6b" path="res://Assets/Bastille-sprite.png" id="1_6nhvc"]
+[ext_resource type="Script" uid="uid://c4dpg7jxxkxjh" path="res://Resources/personagem.gd" id="2_umki2"]
+
+[resource]
+script = ExtResource("2_umki2")
+char_speed = 0.34
+char_sprite = ExtResource("1_6nhvc")
+metadata/_custom_type_script = "uid://c4dpg7jxxkxjh"

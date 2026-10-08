@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Char_data" format=3 uid="uid://d1lschmyxsgk7"]
+
+[ext_resource type="Script" uid="uid://c4dpg7jxxkxjh" path="res://Resources/personagem.gd" id="1_iif5f"]
+[ext_resource type="Texture2D" uid="uid://dxf3j4vke24ju" path="res://Assets/Rebecca-Post-Dressrosa_sprite.png" id="1_lq6hb"]
+
+[resource]
+script = ExtResource("1_iif5f")
+char_speed = 0.32
+char_sprite = ExtResource("1_lq6hb")
+metadata/_custom_type_script = "uid://c4dpg7jxxkxjh"
