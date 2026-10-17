@@ -1,6 +1,4 @@
-res://Cenas/personagem.tscn
+res://Cenas/arena.tscn
+res://Scripts/arena.gd
+res://Scripts/deathstalker.gd
 res://Cenas/menubosses.tscn
-res://Resources/preset280.tres
-res://Resources/preset300.tres
-res://Resources/preset260.tres
-res://Resources/preset320.tres
