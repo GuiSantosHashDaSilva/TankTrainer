@@ -26,9 +26,9 @@ func spawn_player(spawn_position: Vector2): # Use Vector3 for 3D
 	
 func spawn_boss(spawn_position: Vector2):
 	var boss_instance = CENA_BOSS.instantiate()
+	boss_instance.player_ref = player_ref
 	add_child(boss_instance)
 	boss_instance.global_position = spawn_position
-	boss_instance.player_ref = player_ref
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
