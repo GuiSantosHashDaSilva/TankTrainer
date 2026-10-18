@@ -176,8 +176,8 @@ func atk_tail_frenzy():
 		get_tree().create_timer(0.2).timeout.connect(area_dano.queue_free)
 		#endregion
 
-		print(player_ref.global_position, capsula.global_position, tail_count)
-		print(player_ref.hits_tomados)
+		print("Avisos: ", tail_count)
+		
 		
 
 	# limpa o contorno da tela quando acabam os ataques
@@ -186,3 +186,4 @@ func atk_tail_frenzy():
 func acertou_jogador(body :Node2D):
 	if body.has_method("tomar_hit"):
 		body.tomar_hit()
+		print("hits tomados: ",player_ref.hits_tomados)

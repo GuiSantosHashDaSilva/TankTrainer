@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1792285779
+::res://::1792333935
 icon.svg::CompressedTexture2D::7709451294308789726::1791237462::1791237484::1::::<><><>0<>0<>490cec51b7f6783936bc90b3142b1b69<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://Assets/::1791431728
 Bastille-sprite.png::CompressedTexture2D::2469986976747108407::1791430512::1791430513::1::::<><><>0<>0<>d52991a8578a41409c5e502b000db623<>res://.godot/imported/Bastille-sprite.png-3aa69ec91384228145da92ff94c7c1b2.ctex::
@@ -10,11 +10,12 @@ Reiju-Witch-sprite.png::CompressedTexture2D::6289608501092898802::1791306897::17
 Smoker-sprite.png::CompressedTexture2D::1173596290869280054::1791264590::1791266222::1::::<><><>0<>0<>9a22e619f978fd315c07dbf647b166c1<>res://.godot/imported/Smoker-sprite.png-31be914815411101a757582359691aaf.ctex::
 TileTT99.png::CompressedTexture2D::6326675170509737246::1791268630::1791268630::1::::<><><>0<>0<>3369e16345271a25106b7be5a0629ee0<>res://.godot/imported/TileTT99.png-8efcb25eb8944aae3e56426404d99b89.ctex::
 TileTT.png::CompressedTexture2D::425370707666674771::1791269212::1791269212::1::::<><><>0<>0<>3e0d132f04df9cdfaa26cc4ccad2b421<>res://.godot/imported/TileTT.png-d630648272fd6275af9a883edc5a5847.ctex::
-::res://Cenas/::1792285751
+::res://Cenas/::1792306031
+areadanotailfrenzy.tscn::PackedScene::7693454972289158254::1792300262::0::1::::<><><>0<>0<><>::
 arena.tscn::PackedScene::1478316921914446224::1792255917::0::1::::<><><>0<>0<><>::uid://b6mkd877r2fpx::::res://Scripts/arena.gd<>uid://gcb18gdpirpb::::res://Assets/TileTT.png<>uid://cwexoeto6ca2i::::res://Assets/TileTT99.png
 deathstalker.tscn::PackedScene::1837583525704810429::1791425230::0::1::::<><><>0<>0<><>::uid://cvuy6ywfmbsjq::::res://Assets/Reiju-Witch-sprite.png<>uid://4sdijr8qk177::::res://Scripts/deathstalker.gd
 mainmenu.tscn::PackedScene::4961904679008079084::1791426709::0::1::::<><><>0<>0<><>::uid://qxy1ewk088h6::::res://Scripts/mainmenu.gd
-menubosses.tscn::PackedScene::4514923958323266661::1792285751::0::1::::<><><>0<>0<><>::uid://kg3pdls7l7x8::::res://Scripts/menubosses.gd<>uid://c4dpg7jxxkxjh::::res://Resources/personagem.gd<>uid://dp05tp3dmhbus::::res://Resources/preset260.tres<>uid://d1lschmyxsgk7::::res://Resources/preset280.tres<>uid://qsblspya4iai::::res://Resources/preset300.tres<>uid://cxk7mrqyi1ga4::::res://Resources/preset320.tres
+menubosses.tscn::PackedScene::4514923958323266661::1792306031::0::1::::<><><>0<>0<><>::uid://kg3pdls7l7x8::::res://Scripts/menubosses.gd<>uid://c4dpg7jxxkxjh::::res://Resources/personagem.gd<>uid://dp05tp3dmhbus::::res://Resources/preset260.tres<>uid://d1lschmyxsgk7::::res://Resources/preset280.tres<>uid://qsblspya4iai::::res://Resources/preset300.tres<>uid://cxk7mrqyi1ga4::::res://Resources/preset320.tres
 menucredito.tscn::PackedScene::4814438578582685407::1791430043::0::1::::<><><>0<>0<><>::uid://mckm206o7sfc::::res://Scripts/menucredito.gd
 personagem.tscn::PackedScene::2519240800245026248::1791431739::0::1::::<><><>0<>0<><>::uid://d3ookpxukqgyh::::res://Scripts/smoker.gd<>uid://bmo1lcdyntjrg::::res://Assets/Luffy-PirateKing_sprite.png
 ::res://Resources/::1791431906
@@ -23,10 +24,10 @@ preset260.tres::Resource/Char_data::8265560420625865366::1791431894::0::1::::<><
 preset280.tres::Resource/Char_data::9007977005743413516::1791431884::0::1::::<><><>0<>0<><>::uid://c4dpg7jxxkxjh::::res://Resources/personagem.gd<>uid://dxf3j4vke24ju::::res://Assets/Rebecca-Post-Dressrosa_sprite.png
 preset300.tres::Resource/Char_data::1160261628191282512::1791431884::0::1::::<><><>0<>0<><>::uid://bmo1lcdyntjrg::::res://Assets/Luffy-PirateKing_sprite.png<>uid://c4dpg7jxxkxjh::::res://Resources/personagem.gd
 preset320.tres::Resource/Char_data::6409793840612923141::1791431906::0::1::::<><><>0<>0<><>::uid://cscc03n7gv6fs::::res://Assets/Rayleigh-sprite.png<>uid://c4dpg7jxxkxjh::::res://Resources/personagem.gd
-::res://Scripts/::1792285751
+::res://Scripts/::1792305905
 arena.gd::GDScript::4587661681012216465::1792256722::0::1::::Arena<>Node2D<><>0<>0<><>::
-deathstalker.gd::GDScript::2072832202898554616::1792285751::0::1::::<>CharacterBody2D<><>0<>0<><>::
+deathstalker.gd::GDScript::2072832202898554616::1792305905::0::1::::<>CharacterBody2D<><>0<>0<><>::
 mainmenu.gd::GDScript::1172006069588011241::1791261612::0::1::::<>Node2D<><>0<>0<><>::
 menubosses.gd::GDScript::716001741034686471::1791429683::0::1::::<>Node2D<><>0<>0<><>::
 menucredito.gd::GDScript::847024936798081396::1791261567::0::1::::<>Node2D<><>0<>0<><>::
-smoker.gd::GDScript::9154319681642288431::1791431413::0::1::::<>CharacterBody2D<><>0<>0<><>::
+smoker.gd::GDScript::9154319681642288431::1792300911::0::1::::<>CharacterBody2D<><>0<>0<><>::

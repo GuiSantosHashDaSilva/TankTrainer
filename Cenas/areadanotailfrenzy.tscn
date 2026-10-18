@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dhu1cx0nlemao"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_00eoc"]
-radius = 32.0
-height = 192.0
+radius = 28.0
+height = 174.04
 
 [node name="areadanotailfrenzy" type="Area2D" unique_id=377920618]
 

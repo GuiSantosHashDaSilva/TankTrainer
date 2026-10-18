@@ -49,9 +49,10 @@ func andar(input_dir):
 		if andando == false:
 			andando = true
 			var diagonal = abs(input_dir.x) == abs(input_dir.y)
-			var duracao:float = charspeed*DIAGONAL_SPEED_MULTIPLYER if diagonal else charspeed
+			var duracao: float = charspeed*DIAGONAL_SPEED_MULTIPLYER if diagonal else charspeed
+			self.position = position + input_dir * TILE_SIZE
 			var tween = create_tween()
-			tween.tween_property(self, "position", position + input_dir*TILE_SIZE,duracao)
+			tween.tween_property(self.sprite, "position", position + input_dir*TILE_SIZE,duracao).set_trans(Tween.TRANS_SINE)
 			tween.tween_callback(move_false)
 
 func move_false():
