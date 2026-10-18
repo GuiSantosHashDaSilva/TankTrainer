@@ -100,6 +100,7 @@ layout_mode = 2
 max_value = 3.0
 rounded = true
 tick_count = 4
+ticks_on_borders = true
 
 [connection signal="pressed" from="background/MarginContainer/HBoxContainer/vboxbuttonbosses/deathstalkerbutton" to="." method="_on_deathstalkerbutton_pressed"]
 [connection signal="pressed" from="background/MarginContainer/HBoxContainer/vboxbuttonbosses/voltarbutton" to="." method="_on_voltarbutton_pressed"]

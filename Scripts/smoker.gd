@@ -6,6 +6,7 @@ const DIAGONAL_SPEED_MULTIPLYER = 1.5
 var positionchar
 var andando = false
 var charspeed = 0.3
+var hits_tomados = 0
 @export var sprite: Sprite2D
 
 func _input(event: InputEvent) -> void:
@@ -56,3 +57,6 @@ func andar(input_dir):
 func move_false():
 	positionchar = global_position
 	andando = false
+
+func tomar_hit():
+	hits_tomados += 1
