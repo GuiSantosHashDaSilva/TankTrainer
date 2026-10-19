@@ -6,8 +6,13 @@ const CENA_CHAR = preload("res://Cenas/personagem.tscn")
 const CENA_BOSS = preload("res://Cenas/deathstalker.tscn")
 const TILE_SIZE = 96
 
+@export var labelht: Label
+@export var labeldodge: Label
+@export var labelttotaltail: Label
+
+
 var player_ref: CharacterBody2D
-var boss_instance
+var boss_
 static var presetselecionado: Char_data
 
 
@@ -15,6 +20,7 @@ static var presetselecionado: Char_data
 func _ready() -> void:
 	spawn_player(Vector2(9*TILE_SIZE,6*TILE_SIZE))
 	spawn_boss(Vector2(9*TILE_SIZE,3*TILE_SIZE))
+	
 	#print(player_ref.global_position)
 
 func spawn_player(spawn_position: Vector2): # Use Vector3 for 3D
@@ -32,4 +38,6 @@ func spawn_boss(spawn_position: Vector2):
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	labelht.text = var_to_str(player_ref.hits_tomados)
+	labeldodge.text = var_to_str(player_ref.hits_desviados)
 	pass

@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://dhu1cx0nlemao"]
 
+[ext_resource type="Texture2D" uid="uid://uxpbet3sjrmw" path="res://Assets/Deathstalker/TFatk.png" id="1_xa8r5"]
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_00eoc"]
 radius = 28.0
 height = 174.04
@@ -8,3 +10,9 @@ height = 174.04
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1051187687]
 shape = SubResource("CapsuleShape2D_00eoc")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2023657898]
+position = Vector2(1.999999, 15)
+rotation = 1.5707964
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("1_xa8r5")

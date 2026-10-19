@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://1gey5ofi5ls4"]
 
-[ext_resource type="Texture2D" uid="uid://cvuy6ywfmbsjq" path="res://Assets/Reiju-Witch-sprite.png" id="1_b0mhb"]
+[ext_resource type="Texture2D" uid="uid://cvuy6ywfmbsjq" path="res://Assets/Personagens/Reiju-Witch-sprite.png" id="1_b0mhb"]
 [ext_resource type="Script" uid="uid://4sdijr8qk177" path="res://Scripts/deathstalker.gd" id="1_wuox4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wuox4"]

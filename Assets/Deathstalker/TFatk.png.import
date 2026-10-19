@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qyq7veckhxra"
-path="res://.godot/imported/Smoker-sprite.png-31be914815411101a757582359691aaf.ctex"
+uid="uid://uxpbet3sjrmw"
+path="res://.godot/imported/TFatk.png-7ccc73d6677685b2009bf361b32ec491.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Smoker-sprite.png"
-dest_files=["res://.godot/imported/Smoker-sprite.png-31be914815411101a757582359691aaf.ctex"]
+source_file="res://Assets/Deathstalker/TFatk.png"
+dest_files=["res://.godot/imported/TFatk.png-7ccc73d6677685b2009bf361b32ec491.ctex"]
 
 [params]
 

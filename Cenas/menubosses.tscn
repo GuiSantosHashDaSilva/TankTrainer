@@ -6,6 +6,7 @@
 [ext_resource type="Resource" uid="uid://d1lschmyxsgk7" path="res://Resources/preset280.tres" id="4_bijmf"]
 [ext_resource type="Resource" uid="uid://qsblspya4iai" path="res://Resources/preset300.tres" id="5_t3cj6"]
 [ext_resource type="Resource" uid="uid://cxk7mrqyi1ga4" path="res://Resources/preset320.tres" id="6_05c3n"]
+[ext_resource type="Texture2D" uid="uid://b7qb0olvilmre" path="res://Assets/UI/background.jpg" id="7_tfov2"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_346fi"]
 font_size = 78
@@ -22,6 +23,18 @@ presetlist = Dictionary[int, ExtResource("2_aygxc")]({
 [node name="background" type="Panel" parent="." unique_id=135623526]
 offset_right = 1920.0
 offset_bottom = 1080.0
+
+[node name="TextureRect" type="TextureRect" parent="background" unique_id=1608291517]
+z_index = -10
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("7_tfov2")
+metadata/_edit_use_anchors_ = true
 
 [node name="bosseslabel" type="Label" parent="background" unique_id=1206512802]
 layout_mode = 0

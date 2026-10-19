@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cscc03n7gv6fs"
-path="res://.godot/imported/Rayleigh-sprite.png-3100686d2d82d56b5919cba6de5bf0da.ctex"
+uid="uid://bbgqlbjswos6b"
+path="res://.godot/imported/Bastille-sprite.png-714a66d8b545557d6f8669e656b32561.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Rayleigh-sprite.png"
-dest_files=["res://.godot/imported/Rayleigh-sprite.png-3100686d2d82d56b5919cba6de5bf0da.ctex"]
+source_file="res://Assets/Personagens/Bastille-sprite.png"
+dest_files=["res://.godot/imported/Bastille-sprite.png-714a66d8b545557d6f8669e656b32561.ctex"]
 
 [params]
 

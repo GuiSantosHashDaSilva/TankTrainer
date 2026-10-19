@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bb5lr7je7is85"]
 
 [ext_resource type="Script" uid="uid://d3ookpxukqgyh" path="res://Scripts/smoker.gd" id="1_ns5cc"]
-[ext_resource type="Texture2D" uid="uid://bmo1lcdyntjrg" path="res://Assets/Luffy-PirateKing_sprite.png" id="2_ns5cc"]
+[ext_resource type="Texture2D" uid="uid://bmo1lcdyntjrg" path="res://Assets/Personagens/Luffy-PirateKing_sprite.png" id="2_ns5cc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_00eoc"]
 size = Vector2(98, 98)

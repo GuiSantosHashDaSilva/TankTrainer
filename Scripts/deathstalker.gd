@@ -10,6 +10,8 @@ var player_ref :CharacterBody2D
 
 
 func _ready() -> void:
+	print("Começou")
+	await get_tree().create_timer(5).timeout
 	atk_tail_frenzy()
 
 #func _physics_process(delta: float) -> void:
@@ -78,8 +80,8 @@ func atk_tail_frenzy():
 
 		# cria o estilo do CONTORNO (Fundo)
 		var estilo_contorno = StyleBoxFlat.new()
-		estilo_contorno.bg_color = Color(0, 0, 0, 0) # Fundo transparente
-		estilo_contorno.border_color = Color(1.0, 1.0, 1.0) # Cor do contorno (Branco)
+		estilo_contorno.bg_color = Color(0.5, 0, 0.5, 0.5) # Fundo transparente
+		estilo_contorno.border_color = Color(1.0, 0, 1.0) # Cor do contorno (Branco)
 		estilo_contorno.border_width_left = 4
 		estilo_contorno.border_width_right = 4
 		estilo_contorno.border_width_top = 4
@@ -95,7 +97,7 @@ func atk_tail_frenzy():
 
 		# cria o estilo do PREENCHIMENTO
 		var estilo_preenchimento = StyleBoxFlat.new()
-		estilo_preenchimento.bg_color = Color(1.0, 0.2, 0.2, 0.5) # Cor de preenchimento (Vermelho)
+		estilo_preenchimento.bg_color = Color(0.8, 0, 0.8, 0.5) # Cor de preenchimento (Vermelho)
 		# copia o arredondamento para o preenchimento encaixar perfeitamente no formato
 		estilo_preenchimento.corner_radius_top_left = raio
 		estilo_preenchimento.corner_radius_top_right = raio

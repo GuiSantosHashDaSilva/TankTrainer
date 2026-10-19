@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://caufdnubspsvv"]
 
 [ext_resource type="Script" uid="uid://mckm206o7sfc" path="res://Scripts/menucredito.gd" id="1_8eh6t"]
+[ext_resource type="Texture2D" uid="uid://b7qb0olvilmre" path="res://Assets/UI/background.jpg" id="2_iv4cq"]
 
 [node name="menucredito" type="Node2D" unique_id=665398584]
 script = ExtResource("1_8eh6t")
@@ -8,6 +9,14 @@ script = ExtResource("1_8eh6t")
 [node name="background" type="Panel" parent="." unique_id=948527398]
 offset_right = 1920.0
 offset_bottom = 1080.0
+
+[node name="backroundart" type="TextureRect" parent="background" unique_id=290944534]
+z_index = -10
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+texture = ExtResource("2_iv4cq")
 
 [node name="vboxbuttonbosses" type="VBoxContainer" parent="background" unique_id=223428048]
 layout_mode = 1
