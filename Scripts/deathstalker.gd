@@ -6,12 +6,10 @@ const JUMP_VELOCITY = -400.0
 const TILE_SIZE = 96
 const CENA_DANO_TF = preload("res://Cenas/areadanotailfrenzy.tscn")
 
+
 var player_ref :CharacterBody2D
 
-
 func _ready() -> void:
-	print("Começou")
-	await get_tree().create_timer(5).timeout
 	atk_tail_frenzy()
 
 #func _physics_process(delta: float) -> void:
@@ -29,11 +27,15 @@ func atk_tail_frenzy():
 		Vector2(-1,0)
 	]
 
-
 	if player_ref == null:
 		print("Erro, referência do player não encontrada")
 		return
-
+	
+	print("Começou")
+	
+	iniciar_contagem_regressiva()
+	#await get_tree().create_timer(5).timeout
+	
 	#region contorno quadrado
 	# 2. configuraçãp da aparência do contorno
 	contorno.width = 2.0 # Espessura da borda
@@ -58,7 +60,31 @@ func atk_tail_frenzy():
 	player_ref.add_child(contorno)
 	#endregion
 
+	#region timer 5 segundos
+	var tempo_restante = 5
+	var tweenopacidade = get_tree().create_tween()
+	
+	# Anima a propriedade "modulate:a" até chegar em 0.0 ao longo de 2 segundos
+	tweenopacidade.tween_property(self, "modulate:a", 0.0, 5.0)
+	# O loop vai rodar enquanto o tempo for maior que 0
+	while tempo_restante > 0:
+		
+		get_tree().call_group("hud_timer", "atualizar_texto_contador", str(tempo_restante))
+		# 2. Chama a função que precisa acontecer a cada segundo
+		#afundar()
+		# 3. Pausa esse bloco de código por exatamente 1 segundo
+		await get_tree().create_timer(1.0).timeout
+		# 4. Diminui o tempo restante para a próxima volta do loop
+		tempo_restante -= 1
+		
+	# ==========================================
+	# QUANDO O LOOP TERMINA, OS 5 SEGUNDOS PASSARAM
+	# ==========================================
 
+	# Atualiza a tela (pode colocar "0", um texto, ou esconder o Label)
+	get_tree().call_group("hud_timer", "sumir")
+	#endregion
+	
 	while tail_count != 21:
 		tail_count += 1
 
@@ -184,6 +210,44 @@ func atk_tail_frenzy():
 
 	# limpa o contorno da tela quando acabam os ataques
 	player_ref.remove_child(contorno)
+
+#func iniciar_countdown():
+	#contagem_timer = 0 # Reseta o contador
+#
+	#var timer = Timer.new()
+	#timer.wait_time = 1.0 # O timer vai apitar a cada 1 segundo
+#
+	# Conecta o sinal de timeout e passa o próprio timer como parâmetro usando bind()
+	#timer.timeout.connect(afundar.bind(timer))
+#
+	#add_child(timer)
+	#timer.start()
+
+func iniciar_contagem_regressiva():
+	var tempo_restante = 5
+
+	# O loop vai rodar enquanto o tempo for maior que 0
+	while tempo_restante > 0:
+		
+		get_tree().call_group("hud_timer", "atualizar_texto_contador", str(tempo_restante))
+		# 2. Chama a função que precisa acontecer a cada segundo
+		afundar()
+		# 3. Pausa esse bloco de código por exatamente 1 segundo
+		await get_tree().create_timer(1.0).timeout
+		# 4. Diminui o tempo restante para a próxima volta do loop
+		tempo_restante -= 1
+		
+	# ==========================================
+	# QUANDO O LOOP TERMINA, OS 5 SEGUNDOS PASSARAM
+	# ==========================================
+
+	# Atualiza a tela (pode colocar "0", um texto, ou esconder o Label)
+	get_tree().call_group("hud_timer", "sumir")
+
+
+
+func afundar():
+	self.scale -= Vector2(0.2,0.2)
 
 func acertou_jogador(body :Node2D):
 	if body.has_method("tomar_hit"):

@@ -1,14 +1,6 @@
 res://Cenas/menubosses.tscn
 res://Scripts/deathstalker.gd
-res://Cenas/areadanotailfrenzy.tscn
-res://Scripts/smoker.gd
-res://Cenas/personagem.tscn
 res://Cenas/deathstalker.tscn
-res://Cenas/arena.tscn
-res://Resources/preset260.tres
-res://Resources/preset280.tres
-res://Resources/preset300.tres
-res://Resources/preset320.tres
 res://Scripts/arena.gd
-res://Cenas/mainmenu.tscn
-res://Cenas/menucredito.tscn
+res://Cenas/arena.tscn
+res://Scripts/timerlabel.gd

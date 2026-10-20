@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b6mkd877r2fpx" path="res://Scripts/arena.gd" id="1_cbq6b"]
 [ext_resource type="Texture2D" uid="uid://gcb18gdpirpb" path="res://Assets/Tiles/TileTT.png" id="1_uv3me"]
 [ext_resource type="Texture2D" uid="uid://cwexoeto6ca2i" path="res://Assets/Tiles/TileTT99.png" id="2_sbsbi"]
+[ext_resource type="Script" uid="uid://car2som85g74t" path="res://Scripts/timerlabel.gd" id="4_l23bl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cbq6b"]
 texture = ExtResource("1_uv3me")
@@ -123,6 +124,9 @@ font_size = 40
 [sub_resource type="LabelSettings" id="LabelSettings_parux"]
 font_size = 40
 
+[sub_resource type="LabelSettings" id="LabelSettings_wuox4"]
+font_size = 50
+
 [node name="arena" type="Node2D" unique_id=2016140917 node_paths=PackedStringArray("labelht", "labeldodge", "labelttotaltail")]
 script = ExtResource("1_cbq6b")
 labelht = NodePath("HBoxContainer/LabelHT")
@@ -151,3 +155,11 @@ label_settings = SubResource("LabelSettings_00eoc")
 layout_mode = 2
 text = "Total de Caudas: "
 label_settings = SubResource("LabelSettings_parux")
+
+[node name="timerlabel" type="Label" parent="." unique_id=1827964592]
+offset_left = 889.0
+offset_top = 125.0
+offset_right = 929.0
+offset_bottom = 167.0
+label_settings = SubResource("LabelSettings_wuox4")
+script = ExtResource("4_l23bl")

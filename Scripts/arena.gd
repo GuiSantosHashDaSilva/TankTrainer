@@ -10,7 +10,7 @@ const TILE_SIZE = 96
 @export var labeldodge: Label
 @export var labelttotaltail: Label
 
-
+var arena_ref = self
 var player_ref: CharacterBody2D
 var boss_
 static var presetselecionado: Char_data
@@ -37,7 +37,6 @@ func spawn_boss(spawn_position: Vector2):
 	boss_instance.global_position = spawn_position
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	labelht.text = var_to_str(player_ref.hits_tomados)
-	labeldodge.text = var_to_str(player_ref.hits_desviados)
-	pass
+func _process(_delta: float) -> void:
+	labelht.text = str(player_ref.hits_tomados)
+	labeldodge.text = str(player_ref.hits_desviados)
