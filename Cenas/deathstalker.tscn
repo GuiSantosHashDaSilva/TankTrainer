@@ -6,8 +6,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wuox4"]
 size = Vector2(97, 97)
 
-[node name="deathstalker" type="CharacterBody2D" unique_id=1768108959]
+[node name="deathstalker" type="CharacterBody2D" unique_id=1768108959 node_paths=PackedStringArray("colisao_ds")]
 script = ExtResource("1_wuox4")
+colisao_ds = NodePath("collisiondeathstalker")
 
 [node name="collisiondeathstalker" type="CollisionShape2D" parent="." unique_id=1169931896]
 position = Vector2(49.5, -48)

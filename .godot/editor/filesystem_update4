@@ -1,6 +1,6 @@
 res://Cenas/menubosses.tscn
+res://Resources/preset300.tres
 res://Scripts/deathstalker.gd
 res://Cenas/deathstalker.tscn
-res://Scripts/arena.gd
-res://Cenas/arena.tscn
-res://Scripts/timerlabel.gd
+res://Resources/preset280.tres
+res://Resources/preset320.tres

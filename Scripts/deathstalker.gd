@@ -6,7 +6,7 @@ const JUMP_VELOCITY = -400.0
 const TILE_SIZE = 96
 const CENA_DANO_TF = preload("res://Cenas/areadanotailfrenzy.tscn")
 
-
+@export var colisao_ds :CollisionShape2D
 var player_ref :CharacterBody2D
 
 func _ready() -> void:
@@ -34,7 +34,7 @@ func atk_tail_frenzy():
 	print("Começou")
 	
 	iniciar_contagem_regressiva()
-	#await get_tree().create_timer(5).timeout
+	
 	
 	#region contorno quadrado
 	# 2. configuraçãp da aparência do contorno
@@ -85,6 +85,7 @@ func atk_tail_frenzy():
 	get_tree().call_group("hud_timer", "sumir")
 	#endregion
 	
+	set_collision_layer_value(1,false)
 	while tail_count != 21:
 		tail_count += 1
 
@@ -97,7 +98,7 @@ func atk_tail_frenzy():
 		capsula.fill_mode = ProgressBar.FILL_BOTTOM_TO_TOP # Faz encher de baixo para cima
 
 		# define o tamanho da cápsula
-		var largura = 1 * TILE_SIZE
+		var largura = 0.5 * TILE_SIZE
 		var altura = 2 * TILE_SIZE
 		capsula.size = Vector2(largura, altura)
 
@@ -205,8 +206,6 @@ func atk_tail_frenzy():
 		#endregion
 
 		print("Avisos: ", tail_count)
-		
-		
 
 	# limpa o contorno da tela quando acabam os ataques
 	player_ref.remove_child(contorno)
@@ -223,7 +222,7 @@ func atk_tail_frenzy():
 	#add_child(timer)
 	#timer.start()
 
-func iniciar_contagem_regressiva():
+func iniciar_contagem_regressiva(): #ta inutil eu acho
 	var tempo_restante = 5
 
 	# O loop vai rodar enquanto o tempo for maior que 0
@@ -243,8 +242,6 @@ func iniciar_contagem_regressiva():
 
 	# Atualiza a tela (pode colocar "0", um texto, ou esconder o Label)
 	get_tree().call_group("hud_timer", "sumir")
-
-
 
 func afundar():
 	self.scale -= Vector2(0.2,0.2)
