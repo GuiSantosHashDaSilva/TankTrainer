@@ -1,6 +1,5 @@
-res://Cenas/menubosses.tscn
-res://Resources/preset300.tres
+res://Cenas/areadanotailfrenzy.tscn
 res://Scripts/deathstalker.gd
-res://Cenas/deathstalker.tscn
-res://Resources/preset280.tres
-res://Resources/preset320.tres
+res://Scripts/smoker.gd
+res://Cenas/menubosses.tscn
+res://Cenas/mainmenu.tscn

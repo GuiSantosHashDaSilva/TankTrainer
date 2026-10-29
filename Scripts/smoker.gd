@@ -6,6 +6,7 @@ const DIAGONAL_SPEED_MULTIPLYER = 1.5
 var positionchar
 var andando = false
 var charspeed = 0.3
+var hits_totais = 21
 var hits_tomados = 0
 var hits_desviados = 0
 @export var sprite: Sprite2D
@@ -15,8 +16,8 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("voltar"):
 		get_tree().change_scene_to_file("res://Cenas/menubosses.tscn")
 
-func _physics_process(delta: float) -> void:
-	
+func _physics_process(_delta: float) -> void:
+	#hits_desviados = hits_totais - hits_tomados
 	var direction := Vector2.ZERO
 
 	if Input.is_action_pressed("supdir"):
@@ -66,5 +67,7 @@ func move_false():
 
 func tomar_hit():
 	hits_tomados += 1
+	
 func esquiva():
-	hits_desviados += 1
+	hits_desviados += 1 
+	

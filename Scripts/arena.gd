@@ -38,5 +38,5 @@ func spawn_boss(spawn_position: Vector2):
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	labelht.text = str(player_ref.hits_tomados)
-	labeldodge.text = str(player_ref.hits_desviados)
+	labelht.text = "Hits Tomados: "+str(player_ref.hits_tomados)
+	labeldodge.text = "Desviadas: "+str(player_ref.hits_desviados)

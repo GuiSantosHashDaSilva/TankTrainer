@@ -8,6 +8,7 @@ const CENA_DANO_TF = preload("res://Cenas/areadanotailfrenzy.tscn")
 
 @export var colisao_ds :CollisionShape2D
 var player_ref :CharacterBody2D
+var acertou_player = false
 
 func _ready() -> void:
 	atk_tail_frenzy()
@@ -32,10 +33,8 @@ func atk_tail_frenzy():
 		return
 	
 	print("Começou")
-	
-	iniciar_contagem_regressiva()
-	
-	
+
+
 	#region contorno quadrado
 	# 2. configuraçãp da aparência do contorno
 	contorno.width = 2.0 # Espessura da borda
@@ -200,9 +199,13 @@ func atk_tail_frenzy():
 		
 		area_dano.body_entered.connect(acertou_jogador)
 
-		# 5. Faz a área de dano sumir logo em seguida (ex: após 0.2 segundos)
-		# É como um golpe rápido! Se não sumir, a área ficará lá para sempre.
-		get_tree().create_timer(0.2).timeout.connect(area_dano.queue_free)
+		# 5. Faz a área de dano após 0.2 segundos
+		get_tree().create_timer(0.2).timeout.connect(func():
+			if acertou_player == false:
+				errou_jogador(player_ref)
+			area_dano.queue_free())
+		
+		acertou_player = false
 		#endregion
 
 		print("Avisos: ", tail_count)
@@ -210,43 +213,16 @@ func atk_tail_frenzy():
 	# limpa o contorno da tela quando acabam os ataques
 	player_ref.remove_child(contorno)
 
-#func iniciar_countdown():
-	#contagem_timer = 0 # Reseta o contador
-#
-	#var timer = Timer.new()
-	#timer.wait_time = 1.0 # O timer vai apitar a cada 1 segundo
-#
-	# Conecta o sinal de timeout e passa o próprio timer como parâmetro usando bind()
-	#timer.timeout.connect(afundar.bind(timer))
-#
-	#add_child(timer)
-	#timer.start()
-
-func iniciar_contagem_regressiva(): #ta inutil eu acho
-	var tempo_restante = 5
-
-	# O loop vai rodar enquanto o tempo for maior que 0
-	while tempo_restante > 0:
-		
-		get_tree().call_group("hud_timer", "atualizar_texto_contador", str(tempo_restante))
-		# 2. Chama a função que precisa acontecer a cada segundo
-		afundar()
-		# 3. Pausa esse bloco de código por exatamente 1 segundo
-		await get_tree().create_timer(1.0).timeout
-		# 4. Diminui o tempo restante para a próxima volta do loop
-		tempo_restante -= 1
-		
-	# ==========================================
-	# QUANDO O LOOP TERMINA, OS 5 SEGUNDOS PASSARAM
-	# ==========================================
-
-	# Atualiza a tela (pode colocar "0", um texto, ou esconder o Label)
-	get_tree().call_group("hud_timer", "sumir")
 
 func afundar():
 	self.scale -= Vector2(0.2,0.2)
 
+func errou_jogador(body:Node2D):
+	if body.has_method("esquiva"):
+		body.esquiva()
+
 func acertou_jogador(body :Node2D):
+	acertou_player = true
 	if body.has_method("tomar_hit"):
 		body.tomar_hit()
 		print("hits tomados: ",player_ref.hits_tomados)

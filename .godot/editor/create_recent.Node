@@ -1,3 +1,4 @@
+VBoxContainer
 Label
 TextureRect
 HBoxContainer
@@ -6,7 +7,6 @@ CollisionShape2D
 Area2D
 Control
 MarginContainer
-VBoxContainer
 HSlider
 Button
 CharacterBody2D
