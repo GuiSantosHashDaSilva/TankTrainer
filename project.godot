@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="TankTrainer"
+run/main_scene="uid://ccxt3y7uf0ria"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="uid://dqompc5s0q230"
 config/windows_native_icon="res://Assets/UI/Yokozuna_sprite-icon.ico"
