@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbgqlbjswos6b"
-path="res://.godot/imported/Bastille-sprite.png-3aa69ec91384228145da92ff94c7c1b2.ctex"
+uid="uid://cvuy6ywfmbsjq"
+path="res://.godot/imported/Reiju-Witch-sprite.png-a305f03e958dba8ee6c97d96c61f386b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bastille-sprite.png"
-dest_files=["res://.godot/imported/Bastille-sprite.png-3aa69ec91384228145da92ff94c7c1b2.ctex"]
+source_file="res://Assets/Personagens/Reiju-Witch-sprite.png"
+dest_files=["res://.godot/imported/Reiju-Witch-sprite.png-a305f03e958dba8ee6c97d96c61f386b.ctex"]
 
 [params]
 

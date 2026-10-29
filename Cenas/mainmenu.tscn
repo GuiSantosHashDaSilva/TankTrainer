@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ccxt3y7uf0ria"]
 
 [ext_resource type="Script" uid="uid://qxy1ewk088h6" path="res://Scripts/mainmenu.gd" id="1_346fi"]
+[ext_resource type="Texture2D" uid="uid://b7qb0olvilmre" path="res://Assets/UI/background.jpg" id="2_qynjx"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_uv3me"]
 font_size = 78
@@ -11,6 +12,18 @@ script = ExtResource("1_346fi")
 [node name="background" type="Panel" parent="." unique_id=1538106723]
 offset_right = 1920.0
 offset_bottom = 1080.0
+
+[node name="backgroundart" type="TextureRect" parent="background" unique_id=1054594885]
+z_index = -14
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_qynjx")
+metadata/_edit_use_anchors_ = true
 
 [node name="vboxbotaomenu" type="VBoxContainer" parent="background" unique_id=2047572971]
 layout_mode = 1

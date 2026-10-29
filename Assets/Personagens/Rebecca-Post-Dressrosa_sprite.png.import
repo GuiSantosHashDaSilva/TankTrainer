@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gcb18gdpirpb"
-path="res://.godot/imported/TileTT.png-d630648272fd6275af9a883edc5a5847.ctex"
+uid="uid://dxf3j4vke24ju"
+path="res://.godot/imported/Rebecca-Post-Dressrosa_sprite.png-362807d5cbaa72955daa053842004075.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TileTT.png"
-dest_files=["res://.godot/imported/TileTT.png-d630648272fd6275af9a883edc5a5847.ctex"]
+source_file="res://Assets/Personagens/Rebecca-Post-Dressrosa_sprite.png"
+dest_files=["res://.godot/imported/Rebecca-Post-Dressrosa_sprite.png-362807d5cbaa72955daa053842004075.ctex"]
 
 [params]
 

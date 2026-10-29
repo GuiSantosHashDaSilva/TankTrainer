@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvuy6ywfmbsjq"
-path="res://.godot/imported/Reiju-Witch-sprite.png-1c5cf2d84b1a43b362bda8a837d408db.ctex"
+uid="uid://b7qb0olvilmre"
+path="res://.godot/imported/background.jpg-68b26ca945de371f25dde2ea479074e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Reiju-Witch-sprite.png"
-dest_files=["res://.godot/imported/Reiju-Witch-sprite.png-1c5cf2d84b1a43b362bda8a837d408db.ctex"]
+source_file="res://Assets/UI/background.jpg"
+dest_files=["res://.godot/imported/background.jpg-68b26ca945de371f25dde2ea479074e6.ctex"]
 
 [params]
 
