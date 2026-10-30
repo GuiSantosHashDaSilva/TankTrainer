@@ -17,7 +17,6 @@ func _input(event: InputEvent) -> void:
 		get_tree().change_scene_to_file("res://Cenas/menubosses.tscn")
 
 func _physics_process(_delta: float) -> void:
-	#hits_desviados = hits_totais - hits_tomados
 	var direction := Vector2.ZERO
 
 	if Input.is_action_pressed("supdir"):

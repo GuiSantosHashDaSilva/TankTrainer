@@ -128,8 +128,8 @@ font_size = 40
 [sub_resource type="LabelSettings" id="LabelSettings_00eoc"]
 font_size = 40
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_00eoc"]
-normal = Vector2(0, 1)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xi8sq"]
+size = Vector2(1940, 16)
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_parux"]
 
@@ -182,7 +182,8 @@ script = ExtResource("5_xi8sq")
 position = Vector2(961, -8)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="boundnorte" unique_id=1810351827]
-shape = SubResource("WorldBoundaryShape2D_00eoc")
+position = Vector2(2, -2)
+shape = SubResource("RectangleShape2D_xi8sq")
 
 [node name="boundsul" type="Area2D" parent="." unique_id=2065280513]
 position = Vector2(960, 1085)

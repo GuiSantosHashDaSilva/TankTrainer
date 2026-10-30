@@ -3,3 +3,4 @@ res://Cenas/personagem.tscn
 res://Cenas/menubosses.tscn
 res://Scripts/deathstalker.gd
 res://Cenas/arena.tscn
+res://Scripts/smoker.gd
