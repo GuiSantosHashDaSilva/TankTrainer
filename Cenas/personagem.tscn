@@ -19,3 +19,6 @@ texture_filter = 1
 position = Vector2(-33, -121.00001)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_ns5cc")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=628808415]
+zoom = Vector2(1.5, 1.5)
