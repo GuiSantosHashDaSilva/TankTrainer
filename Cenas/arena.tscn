@@ -128,6 +128,17 @@ font_size = 40
 [sub_resource type="LabelSettings" id="LabelSettings_00eoc"]
 font_size = 40
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_00eoc"]
+normal = Vector2(0, 1)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_parux"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_t7v2k"]
+normal = Vector2(-1, 0)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_tdhwl"]
+normal = Vector2(1, 0)
+
 [node name="arena" type="Node2D" unique_id=2016140917 node_paths=PackedStringArray("labelht", "labeldodge", "labelttotaltail")]
 script = ExtResource("1_cbq6b")
 labelht = NodePath("VBoxContainer/LabelHT")
@@ -166,3 +177,27 @@ layout_mode = 2
 text = "Desviadas: "
 label_settings = SubResource("LabelSettings_00eoc")
 script = ExtResource("5_xi8sq")
+
+[node name="boundnorte" type="Area2D" parent="." unique_id=1303392742]
+position = Vector2(961, -8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="boundnorte" unique_id=1810351827]
+shape = SubResource("WorldBoundaryShape2D_00eoc")
+
+[node name="boundsul" type="Area2D" parent="." unique_id=2065280513]
+position = Vector2(960, 1085)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="boundsul" unique_id=2003165586]
+shape = SubResource("WorldBoundaryShape2D_parux")
+
+[node name="boundleste" type="Area2D" parent="." unique_id=967798201]
+position = Vector2(1929, 480)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="boundleste" unique_id=77587984]
+shape = SubResource("WorldBoundaryShape2D_t7v2k")
+
+[node name="boundoeste" type="Area2D" parent="." unique_id=599567476]
+position = Vector2(-5, 576)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="boundoeste" unique_id=1718197142]
+shape = SubResource("WorldBoundaryShape2D_tdhwl")
