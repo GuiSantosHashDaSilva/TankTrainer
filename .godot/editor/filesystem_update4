@@ -1,2 +1,4 @@
 res://Cenas/mainmenu.tscn
 res://Cenas/personagem.tscn
+res://Cenas/menubosses.tscn
+res://Scripts/deathstalker.gd

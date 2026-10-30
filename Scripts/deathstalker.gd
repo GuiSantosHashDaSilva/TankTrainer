@@ -123,7 +123,7 @@ func atk_tail_frenzy():
 
 		# cria o estilo do PREENCHIMENTO
 		var estilo_preenchimento = StyleBoxFlat.new()
-		estilo_preenchimento.bg_color = Color(0.8, 0, 0.8, 0.5) # Cor de preenchimento (Vermelho)
+		estilo_preenchimento.bg_color = Color(1, 0, 0.4, 0.5) # Cor de preenchimento (Vermelho)
 		# copia o arredondamento para o preenchimento encaixar perfeitamente no formato
 		estilo_preenchimento.corner_radius_top_left = raio
 		estilo_preenchimento.corner_radius_top_right = raio
