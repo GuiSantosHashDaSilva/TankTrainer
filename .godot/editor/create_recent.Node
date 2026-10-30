@@ -1,15 +1,14 @@
+CollisionShape2D
+Area2D
 Camera2D
 VBoxContainer
 Label
 TextureRect
 HBoxContainer
 Sprite2D
-CollisionShape2D
-Area2D
 Control
 MarginContainer
 HSlider
 Button
 CharacterBody2D
 TileMapLayer
-TileMap
